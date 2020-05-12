@@ -1,5 +1,3 @@
-const express = require('express');
-const app = express();
 const bcrypt= require('bcrypt');
 const _ = require('underscore');//NOS AYUDA A PROCESAR
 //UNA UN OBJETO Y SELECCIONAR QUE PROPIEDADES QUEREMOS QUE SEAN 
