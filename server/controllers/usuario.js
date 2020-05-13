@@ -28,10 +28,11 @@ module.exports={
     },
     crear: function(req, res){
         let params=req.body;
+        const salt=10;
         let usuario=new Usuario({
             nombre:params.nombre,
             email:params.email,
-            password: bcrypt.hashSync( params.password,10),
+            password: bcrypt.hashSync( params.password,salt),
             role:params.role
         });
         usuario.save( (err, usuarioDB) =>{

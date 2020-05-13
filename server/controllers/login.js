@@ -35,6 +35,7 @@ module.exports = {
                 });
             }
             // Se crea el token
+            console.log(process.env.CADUCIDAD_TOKEN);
             let token = jwt.sign({
                 usuario:usuarioDB
             }, 'este-es-el-seed-desarrollo', {expiresIn: process.env.CADUCIDAD_TOKEN});
