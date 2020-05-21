@@ -1,5 +1,4 @@
 let Producto = require('../models/producto');
-
 module.exports = {
     crear: (req, res) => {
         let body=req.body;
@@ -98,7 +97,6 @@ module.exports = {
                 });
             }
         });
-
     },
     actualizar: (req, res) => {
         let id=req.params.id;

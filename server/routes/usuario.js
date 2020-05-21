@@ -7,7 +7,8 @@ const { verificaToken, verificaAdmin_Role } = require('../middlewares/autenticac
 app.get('/usuario',  UsuarioControlador.ObtenerTodo);
 app.get('/', (req, res)=>{
     return res.status(200).json({
-        message:"Hola mundo"
+        message:"Hola mundo",
+        seed:process.dev.SEED
     });
 });
 // app.post('/usuario',[verificaToken, verificaAdmin_Role],  UsuarioControlador.crear); 
