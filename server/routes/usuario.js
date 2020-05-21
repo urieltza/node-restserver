@@ -8,7 +8,7 @@ app.get('/usuario',  UsuarioControlador.ObtenerTodo);
 app.get('/', (req, res)=>{
     return res.status(200).json({
         message:"Hola mundo",
-        seed:process.dev.SEED
+        seed:process.env.SEED
     });
 });
 // app.post('/usuario',[verificaToken, verificaAdmin_Role],  UsuarioControlador.crear); 
