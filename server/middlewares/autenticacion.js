@@ -15,7 +15,8 @@ let verificaToken=( req, res, next) =>{
                 ok:false,
                 err:{
                     message:'Token no válido',
-                    err
+                    err,
+                    secret:process.env.SEED
                 },
                 
             });
